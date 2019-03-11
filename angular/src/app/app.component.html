@@ -1,7 +1,8 @@
 ﻿<!-- nav -->
-<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+<nav class="navbar navbar-expand navbar-dark bg-dark justify-content-end" *ngIf="currentUser">
     <div class="navbar-nav">
-        <a class="nav-item nav-link" routerLink="/">Task Manager</a>
+        <a class="nav-item nav-link" routerLink="/todo">ToDo</a>
+        <a class="nav-item nav-link" routerLink="/">Setting</a>
         <a class="nav-item nav-link" (click)="logout()">Logout</a>
     </div>
 </nav>

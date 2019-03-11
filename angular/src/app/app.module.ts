@@ -5,12 +5,12 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent }  from './app.component';
 import { routing }        from './app.routing';
-
 import { AlertComponent } from './components';
 import { JwtInterceptor, ErrorInterceptor } from './helpers';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
-import { RegisterComponent } from './register';
+import { RegisterComponent } from './register';;
+import { TodoComponent } from './todo/todo.component'
 
 @NgModule({
     imports: [
@@ -25,7 +25,8 @@ import { RegisterComponent } from './register';
         AlertComponent,
         HomeComponent,
         LoginComponent,
-        RegisterComponent
+        RegisterComponent,
+        TodoComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
