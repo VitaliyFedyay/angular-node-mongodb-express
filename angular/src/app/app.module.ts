@@ -2,12 +2,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule }    from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent }  from './app.component';
 import { routing }        from './app.routing';
 
-import { AlertComponent } from './_components';
-import { JwtInterceptor, ErrorInterceptor } from './_helpers';
+import { AlertComponent } from './components';
+import { JwtInterceptor, ErrorInterceptor } from './helpers';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
@@ -17,6 +17,7 @@ import { RegisterComponent } from './register';
         BrowserModule,
         ReactiveFormsModule,
         HttpClientModule,
+        BrowserAnimationsModule,
         routing
     ],
     declarations: [
